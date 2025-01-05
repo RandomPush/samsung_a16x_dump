@@ -1,0 +1,14 @@
+# a16xxx-user 14 UP1A.231005.007 A166BXXU3AXK3 release-keys
+- manufacturer: samsung
+- platform: erd8535
+- codename: a16x
+- flavor: a16xxx-user
+- release: 14
+- id: UP1A.231005.007
+- incremental: A166BXXU3AXK3
+- tags: release-keys
+- fingerprint: samsung/a16xxx/a16x:13/TP1A.220624.014/A166BXXU3AXK3:user/release-keys
+- is_ab: false
+- brand: samsung
+- branch: a16xxx-user-14-UP1A.231005.007-A166BXXU3AXK3-release-keys
+- repo: samsung_a16x_dump
