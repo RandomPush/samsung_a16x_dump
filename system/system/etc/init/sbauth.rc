@@ -1,0 +1,20 @@
+on charger
+    chmod 0660 /dev/AuthOn
+    chown system system /dev/AuthOn
+
+	on property:vendor.security.vaultkeeper.native=1
+    start sbauth
+
+on boot
+    chown system system /dev/AuthOn
+    chmod 0660 /dev/AuthOn
+
+service sbauth /system/bin/sbauth
+    class sbauth_start
+    capabilities SYS_ADMIN
+    user system
+    group system
+    oneshot
+
+    on property:vendor.security.vaultkeeper.native=1
+    start sbauth

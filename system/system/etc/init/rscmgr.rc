@@ -1,0 +1,14 @@
+# rscmgr rc file
+on property:sys.readahead.resource=1
+    readahead /vendor/lib64/lib_supernight_interface.so --fully
+    readahead /vendor/lib64/libExtIRTA.so --fully
+    readahead /vendor/lib64/libformatConverter.unifunc.so --fully
+    readahead /vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl.so --fully
+    readahead /vendor/lib64/libIRTA.so --fully
+
+on property:sys.readahead.resource=2
+    readahead /system/app/HoneyBoard/oat/arm64/HoneyBoard.vdex --fully
+    readahead /system/app/HoneyBoard/HoneyBoard.apk --fully
+
+on property:sys.readahead.resource=3
+    setprop sys.readahead.resource 0
